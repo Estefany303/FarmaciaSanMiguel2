@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Farmacia San Miguel</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <div class="container d-flex justify-content-between">
+            <span>
+                <i class="bi bi-geo-alt"></i>
+                Tamapatz, Aquismón, S.L.P.
+            </span>
+
+            <span>
+                <i class="bi bi-telephone"></i>
+                481 109 3416
+            </span>
+        </div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center" href="#inicio">
+
+                <div class="logo">
+                    <i class="bi bi-plus-lg"></i>
+                </div>
+
+                <div class="ms-2">
+                    <strong>Farmacia</strong>
+                    <span>San Miguel</span>
+                </div>
+
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categorias">Categorías</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productos">Productos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#promociones">Promociones</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ubicacion">Ubicación</a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3">
+
+                        <button class="btn btn-success carrito-btn" data-bs-toggle="modal" data-bs-target="#carritoModal">
+
+                            <i class="bi bi-cart3"></i>
+
+                            Carrito
+
+                            <span id="contadorCarrito" class="badge bg-danger">
+                                0
+                            </span>
+
+                        </button>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <main id="inicio">
+
+
+        <section class="hero">
+
+            <div id="carouselFarmacia" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+
+                    <button type="button" data-bs-target="#carouselFarmacia" data-bs-slide-to="0" class="active"></button>
+
+                    <button type="button" data-bs-target="#carouselFarmacia" data-bs-slide-to="1"></button>
+
+                    <button type="button" data-bs-target="#carouselFarmacia" data-bs-slide-to="2"></button>
+
+                </div>
+
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active hero-slide slide-1">
+
+                        <div class="container">
+
+                            <div class="hero-content">
+
+                                <span class="etiqueta">
+                                    FARMACIA SAN MIGUEL
+                                </span>
+
+                                <h1>
+                                    Tu salud es nuestra prioridad
+                                </h1>
+
+                                <p>
+                                    Encuentra productos para cuidar tu salud
+                                    y la de toda tu familia.
+                                </p>
+
+                                <a href="#productos" class="btn btn-success btn-lg">
+                                    Ver productos
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="carousel-item hero-slide slide-2">
+
+                        <div class="container">
+
+                            <div class="hero-content">
+
+                                <span class="etiqueta">
+                                    GRANDES PROMOCIONES
+                                </span>
+
+                                <h1>
+                                    Cuida tu salud y ahorra
+                                </h1>
+
+                                <p>
+                                    Descubre nuestras promociones
+                                    y productos seleccionados.
+                                </p>
+
+                                <a href="#promociones" class="btn btn-success btn-lg">
+                                    Ver promociones
+                                    <i class="bi bi-tag"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="carousel-item hero-slide slide-3">
+
+                        <div class="container">
+
+                            <div class="hero-content">
+
+                                <span class="etiqueta">
+                                    SIEMPRE CERCA DE TI
+                                </span>
+
+                                <h1>
+                                    Estamos para servirte
+                                </h1>
+
+                                <p>
+                                    Visítanos en Tamapatz, Aquismón,
+                                    San Luis Potosí.
+                                </p>
+
+                                <a href="#ubicacion" class="btn btn-success btn-lg">
+                                    Ver ubicación
+                                    <i class="bi bi-geo-alt"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselFarmacia" data-bs-slide="prev">
+
+                    <span class="carousel-control-prev-icon"></span>
+
+                </button>
+
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselFarmacia" data-bs-slide="next">
+
+                    <span class="carousel-control-next-icon"></span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section class="buscador">
+
+            <div class="container">
+
+                <div class="search-box">
+
+                    <i class="bi bi-search"></i>
+
+                    <input
+                        type="text"
+                        id="busqueda"
+                        class="form-control"
+                        placeholder="¿Qué estás buscando?">
+
+                    <button class="btn btn-success" onclick="buscarProducto()">
+                        Buscar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="categorias" class="py-5">
+
+            <div class="container">
+
+                <div class="text-center mb-5">
+
+                    <span class="titulo-verde">
+                        ENCUENTRA LO QUE NECESITAS
+                    </span>
+
+                    <h2>
+                        Categorías
+                    </h2>
+
+                    <p>
+                        Productos para cuidar de ti y de tu familia.
+                    </p>
+
+                </div>
+
+
+                <div class="row g-4">
+
+
+                    <div class="col-6 col-md-3">
+
+                        <div class="categoria" onclick="filtrarCategoria('medicamentos')">
+
+                            <div class="categoria-icon">
+                                <i class="bi bi-capsule"></i>
+                            </div>
+
+                            <h5>Medicamentos</h5>
+
+                            <p>
+                                Cuidado y salud
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-6 col-md-3">
+
+                        <div class="categoria" onclick="filtrarCategoria('vitaminas')">
+
+                            <div class="categoria-icon">
+                                <i class="bi bi-heart-pulse"></i>
+                            </div>
+
+                            <h5>Vitaminas</h5>
+
+                            <p>
+                                Bienestar diario
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-6 col-md-3">
+
+                        <div class="categoria" onclick="filtrarCategoria('higiene')">
+
+                            <div class="categoria-icon">
+                                <i class="bi bi-droplet"></i>
+                            </div>
+
+                            <h5>Higiene</h5>
+
+                            <p>
+                                Cuidado personal
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-6 col-md-3">
+
+                        <div class="categoria" onclick="filtrarCategoria('bebes')">
+
+                            <div class="categoria-icon">
+                                <i class="bi bi-person-hearts"></i>
+                            </div>
+
+                            <h5>Bebés</h5>
+
+                            <p>
+                                Para los pequeños
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="productos" class="productos py-5">
+
+            <div class="container">
+
+                <div class="d-flex justify-content-between align-items-end mb-4">
+
+                    <div>
+
+                        <span class="titulo-verde">
+                            PRODUCTOS
+                        </span>
+
+                        <h2>
+                            Productos destacados
+                        </h2>
+
+                    </div>
+
+                    <button class="btn btn-outline-success" onclick="mostrarTodos()">
+                        Ver todos
+                    </button>
+
+                </div>
+
+
+                <div class="row g-4" id="listaProductos">
+
+
+                    <div class="col-md-6 col-lg-3 producto" data-categoria="medicamentos" data-nombre="Paracetamol">
+
+                        <div class="card producto-card">
+
+                            <div class="producto-img">
+                                <i class="bi bi-capsule"></i>
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="categoria-producto">
+                                    Medicamentos
+                                </span>
+
+                                <h5>
+                                    Paracetamol
+                                </h5>
+
+                                <p>
+                                    Analgésico y antipirético.
+                                </p>
+
+                                <div class="producto-bottom">
+
+                                    <strong>
+                                        $45.00
+                                    </strong>
+
+                                    <button
+                                        class="btn btn-success"
+                                        onclick="agregarCarrito('Paracetamol',45)">
+
+                                        <i class="bi bi-cart-plus"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-3 producto" data-categoria="vitaminas" data-nombre="Vitamina C">
+
+                        <div class="card producto-card">
+
+                            <div class="producto-img vitamina">
+                                <i class="bi bi-heart-pulse"></i>
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="categoria-producto">
+                                    Vitaminas
+                                </span>
+
+                                <h5>
+                                    Vitamina C
+                                </h5>
+
+                                <p>
+                                    Complemento para tu bienestar.
+                                </p>
+
+                                <div class="producto-bottom">
+
+                                    <strong>
+                                        $89.00
+                                    </strong>
+
+                                    <button
+                                        class="btn btn-success"
+                                        onclick="agregarCarrito('Vitamina C',89)">
+
+                                        <i class="bi bi-cart-plus"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-3 producto" data-categoria="higiene" data-nombre="Gel antibacterial">
+
+                        <div class="card producto-card">
+
+                            <div class="producto-img higiene">
+                                <i class="bi bi-droplet"></i>
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="categoria-producto">
+                                    Higiene
+                                </span>
+
+                                <h5>
+                                    Gel antibacterial
+                                </h5>
+
+                                <p>
+                                    Protección para tus manos.
+                                </p>
+
+                                <div class="producto-bottom">
+
+                                    <strong>
+                                        $39.00
+                                    </strong>
+
+                                    <button
+                                        class="btn btn-success"
+                                        onclick="agregarCarrito('Gel antibacterial',39)">
+
+                                        <i class="bi bi-cart-plus"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-3 producto" data-categoria="bebes" data-nombre="Pañales">
+
+                        <div class="card producto-card">
+
+                            <div class="producto-img bebe">
+                                <i class="bi bi-person-hearts"></i>
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="categoria-producto">
+                                    Bebés
+                                </span>
+
+                                <h5>
+                                    Pañales
+                                </h5>
+
+                                <p>
+                                    Cuidado y comodidad para bebés.
+                                </p>
+
+                                <div class="producto-bottom">
+
+                                    <strong>
+                                        $179.00
+                                    </strong>
+
+                                    <button
+                                        class="btn btn-success"
+                                        onclick="agregarCarrito('Pañales',179)">
+
+                                        <i class="bi bi-cart-plus"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="promociones" class="promociones py-5">
+
+            <div class="container">
+
+                <div class="text-center mb-5">
+
+                    <span class="titulo-verde">
+                        APROVECHA
+                    </span>
+
+                    <h2>
+                        Promociones
+                    </h2>
+
+                </div>
+
+
+                <div class="row g-4">
+
+
+                    <div class="col-md-4">
+
+                        <div class="promo-card">
+
+                            <span class="promo-tag">
+                                OFERTA
+                            </span>
+
+                            <h3>
+                                10% de descuento
+                            </h3>
+
+                            <p>
+                                En productos seleccionados.
+                            </p>
+
+                            <button class="btn btn-success" onclick="mostrarPromo()">
+                                Aprovechar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-4">
+
+                        <div class="promo-card">
+
+                            <span class="promo-tag">
+                                ESPECIAL
+                            </span>
+
+                            <h3>
+                                Productos de cuidado
+                            </h3>
+
+                            <p>
+                                Encuentra opciones para toda la familia.
+                            </p>
+
+                            <a href="#productos" class="btn btn-success">
+                                Comprar
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-4">
+
+                        <div class="promo-card">
+
+                            <span class="promo-tag">
+                                SAN MIGUEL
+                            </span>
+
+                            <h3>
+                                Atención cercana
+                            </h3>
+
+                            <p>
+                                Estamos cerca para ayudarte.
+                            </p>
+
+                            <a href="#ubicacion" class="btn btn-success">
+                                Visítanos
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="servicios" class="servicios py-5">
+
+            <div class="container">
+
+                <div class="text-center mb-5">
+
+                    <span class="titulo-verde">
+                        NUESTROS SERVICIOS
+                    </span>
+
+                    <h2>
+                        Estamos para ayudarte
+                    </h2>
+
+                </div>
+
+
+                <div class="row g-4">
+
+
+                    <div class="col-md-4">
+
+                        <div class="servicio">
+
+                            <i class="bi bi-capsule"></i>
+
+                            <h4>
+                                Medicamentos
+                            </h4>
+
+                            <p>
+                                Productos para diferentes necesidades
+                                de salud.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-4">
+
+                        <div class="servicio">
+
+                            <i class="bi bi-heart-pulse"></i>
+
+                            <h4>
+                                Cuidado de la salud
+                            </h4>
+
+                            <p>
+                                Productos para el bienestar
+                                de toda la familia.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-4">
+
+                        <div class="servicio">
+
+                            <i class="bi bi-person-check"></i>
+
+                            <h4>
+                                Atención personalizada
+                            </h4>
+
+                            <p>
+                                Te atendemos de manera cercana
+                                y amable.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="ubicacion" class="ubicacion py-5">
+
+            <div class="container">
+
+                <div class="row align-items-center g-5">
+
+
+                    <div class="col-md-6">
+
+                        <span class="titulo-verde">
+                            VISÍTANOS
+                        </span>
+
+                        <h2>
+                            Encuentra Farmacia San Miguel
+                        </h2>
+
+                        <p>
+                            Estamos para atenderte y ofrecerte productos
+                            para el cuidado de tu salud y la de tu familia.
+                        </p>
+
+
+                        <div class="dato">
+
+                            <i class="bi bi-geo-alt-fill"></i>
+
+                            <div>
+
+                                <strong>
+                                    Dirección
+                                </strong>
+
+                                <p>
+                                    Tamapatz, Aquismón,
+                                    San Luis Potosí, México
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="dato">
+
+                            <i class="bi bi-telephone-fill"></i>
+
+                            <div>
+
+                                <strong>
+                                    Teléfono
+                                </strong>
+
+                                <p>
+                                    481 109 3416
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="dato">
+
+                            <i class="bi bi-envelope-fill"></i>
+
+                            <div>
+
+                                <strong>
+                                    Correo electrónico
+                                </strong>
+
+                                <p>
+                                    farmacia_sm@gmail.com
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="dato">
+
+                            <i class="bi bi-clock-fill"></i>
+
+                            <div>
+
+                                <strong>
+                                    Horario
+                                </strong>
+
+                                <p>
+                                    Lunes a domingo · 8:00 AM - 10:00 PM
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-6">
+
+                        <div class="mapa">
+
+                            <i class="bi bi-geo-alt-fill"></i>
+
+                            <h4>
+                                Farmacia San Miguel
+                            </h4>
+
+                            <p>
+                                Tamapatz, Aquismón, S.L.P.
+                            </p>
+
+                            <a
+                                href="https://www.google.com/maps/search/?api=1&query=Tamapatz%2C%20Aquismon%2C%20San%20Luis%20Potosi%2C%20Mexico"
+                                target="_blank"
+                                class="btn btn-light">
+
+                                <i class="bi bi-map"></i>
+                                Cómo llegar
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="contacto py-5">
+
+            <div class="container">
+
+                <div class="row align-items-center">
+
+
+                    <div class="col-md-7">
+
+                        <span>
+                            ¿TIENES ALGUNA PREGUNTA?
+                        </span>
+
+                        <h2>
+                            Estamos para atenderte
+                        </h2>
+
+                        <p>
+                            Contáctanos para conocer nuestros productos,
+                            servicios y promociones.
+                        </p>
+
+                    </div>
+
+
+                    <div class="col-md-5 text-md-end">
+
+                        <a
+                            href="https://wa.me/524811093416"
+                            target="_blank"
+                            class="btn btn-light btn-lg me-2">
+
+                            <i class="bi bi-whatsapp"></i>
+                            WhatsApp
+
+                        </a>
+
+
+                        <a
+                            href="tel:+524811093416"
+                            class="btn btn-outline-light btn-lg">
+
+                            <i class="bi bi-telephone"></i>
+                            Llamar
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+        <div class="container">
+
+            <div class="row g-4">
+
+
+                <div class="col-md-4">
+
+                    <div class="footer-logo">
+
+                        <div class="logo">
+                            <i class="bi bi-plus-lg"></i>
+                        </div>
+
+                        <span>
+                            Farmacia <strong>San Miguel</strong>
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Tu salud, nuestro compromiso.
+                        Productos y servicios para cuidar de ti
+                        y de tu familia.
+                    </p>
+
+
+                    <div class="redes">
+
+                        <a href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a
+                            href="https://wa.me/524811093416"
+                            target="_blank">
+
+                            <i class="bi bi-whatsapp"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-2">
+
+                    <h5>
+                        Farmacia
+                    </h5>
+
+                    <a href="#inicio">
+                        Inicio
+                    </a>
+
+                    <a href="#categorias">
+                        Categorías
+                    </a>
+
+                    <a href="#productos">
+                        Productos
+                    </a>
+
+                    <a href="#servicios">
+                        Servicios
+                    </a>
+
+                    <a href="#ubicacion">
+                        Ubicación
+                    </a>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <h5>
+                        Información
+                    </h5>
+
+                    <a href="#promociones">
+                        Promociones
+                    </a>
+
+                    <a href="#servicios">
+                        Servicios
+                    </a>
+
+                    <a href="#ubicacion">
+                        Dónde encontrarnos
+                    </a>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <h5>
+                        Contacto
+                    </h5>
+
+                    <p>
+                        <i class="bi bi-telephone"></i>
+                        481 109 3416
+                    </p>
+
+                    <p>
+                        <i class="bi bi-envelope"></i>
+                        farmacia_sm@gmail.com
+                    </p>
+
+                    <p>
+                        <i class="bi bi-geo-alt"></i>
+                        Tamapatz, Aquismón, S.L.P.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <hr>
+
+
+            <div class="text-center">
+
+                <p class="mb-0">
+                    © 2026 Farmacia San Miguel ·
+                    Todos los derechos reservados
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <div class="modal fade" id="carritoModal" tabindex="-1">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content">
+
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title">
+                        <i class="bi bi-cart3"></i>
+                        Mi carrito
+                    </h5>
+
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal">
+                    </button>
+
+                </div>
+
+
+                <div class="modal-body">
+
+                    <div id="contenidoCarrito">
+
+                        <div class="carrito-vacio">
+
+                            <i class="bi bi-cart-x"></i>
+
+                            <p>
+                                Tu carrito está vacío.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="modal-footer">
+
+                    <strong>
+                        Total:
+                        $<span id="totalCarrito">0.00</span>
+                    </strong>
+
+                    <button
+                        class="btn btn-success"
+                        onclick="finalizarCompra()">
+
+                        Finalizar pedido
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div
+        class="toast-container position-fixed bottom-0 end-0 p-3">
+
+        <div
+            id="mensajeToast"
+            class="toast"
+            role="alert">
+
+            <div class="toast-body">
+                Producto agregado al carrito.
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
